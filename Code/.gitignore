@@ -1,0 +1,27 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/assets
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+app/src/main/assets/models/gemma1.gguf
+
+# Hidden AI Integration folders
+app/src/main/java/com/example/demolition/ai/
+app/src/main/java/com/example/demolition/rag/
+
+# Hidden Native C++ code
+app/src/main/cpp/
+
+# Hidden NCERT curriculum data
+app/src/main/assets
