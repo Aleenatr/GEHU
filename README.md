@@ -32,13 +32,13 @@ LearnLoop is an offline AI learning assistant that runs on budget Android device
 ### 📸 App Preview
 
 <div align="center">
-  <img src="docs/images/R2_1" width="270" alt="Home Screen"/>
-  <img src="docs/images/R2_2" width="270" alt="Interactive AI Chat Page"/>
-  <img src="docs/images/R2_3" width="270" alt="AI Response"/>
-  <img src="docs/images/R2_4" width="270" alt="Student Courses"/>
-  <img src="docs/images/R2_5" width="270" alt="Student Courses 2"/>
-  <img src="docs/images/R2_6" width="270" alt="Quiz Page"/>
-  <img src="docs/images/R2_7" width="270" alt="Quiz Questions"/>
+  <img src="docs/images/R2_1.jpg" width="270" alt="Home Screen"/>
+  <img src="docs/images/R2_2.jpg" width="270" alt="Interactive AI Chat Page"/>
+  <img src="docs/images/R2_3.jpg" width="270" alt="AI Response"/>
+  <img src="docs/images/R2_4.jpg" width="270" alt="Student Courses"/>
+  <img src="docs/images/R2_5.jpg" width="270" alt="Student Courses 2"/>
+  <img src="docs/images/R2_6.jpg" width="270" alt="Quiz Page"/>
+  <img src="docs/images/R2_7.jpg" width="270" alt="Quiz Questions"/>
   
   <p><em>LearnLoop's intuitive interface: AI Chat Assistant • Quiz Module • Smart Schedule</em></p>
 </div>
