@@ -1,8 +1,10 @@
-# Demolition: AI-Powered Offline Education Companion 🎓
+# Demolition: Offline AI Learning Assistant for Indian Schools
 
 **Team Silent Loop** | GEHU Hackathon Round 2
 
 ---
+
+## 🎯 Project Theme: App + GOV
 
 ## 🌟 Executive Summary
 
