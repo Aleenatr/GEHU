@@ -17,11 +17,11 @@ local.properties
 app/src/main/assets/models/gemma1.gguf
 
 # Hidden AI Integration folders
-app/src/main/java/com/example/demolition/ai/
-app/src/main/java/com/example/demolition/rag/
+# app/src/main/java/com/example/demolition/ai/
+# app/src/main/java/com/example/demolition/rag/
 
-# Hidden Native C++ code
-app/src/main/cpp/
+# # Hidden Native C++ code
+# app/src/main/cpp/
 
-# Hidden NCERT curriculum data
-app/src/main/assets
+# # Hidden NCERT curriculum data
+# app/src/main/assets
