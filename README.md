@@ -872,74 +872,110 @@ Our RAG implementation ensures that AI responses are factually accurate and grou
 ```
 Code/
 ├── app/src/main/
-│   ├── java/com/example/learnloop/
-│   │   ├── activities/
-│   │   │   ├── SplashActivity.kt          (Launch screen)
-│   │   │   ├── LoginActivity.kt           (Authentication)
-│   │   │   ├── MainActivity.kt            (Main container)
-│   │   │   ├── ProfileActivity.kt         (User profile)
-│   │   │   └── QuizActivity.kt            (Quiz interface)
-│   │   ├── fragments/
-│   │   │   ├── HomeFragment.kt            (Dashboard)
-│   │   │   ├── ChatFragment.kt            (AI chat)
-│   │   │   ├── QuizFragment.kt            (Quiz selection)
-│   │   │   ├── MindmapFragment.kt         (Visual learning)
-│   │   │   └── ScheduleFragment.kt        (Timetable)
-│   │   ├── ai/
+│   ├── java/com/example/demolition/
+│   │   ├── ai/                            (AI Integration - Core)
 │   │   │   ├── GGUFModelLoader.kt         (Model initialization)
 │   │   │   ├── GGUFChat.kt                (Chat interface)
 │   │   │   └── LlamaNative.kt             (JNI bindings)
-│   │   ├── rag/
+│   │   ├── rag/                           (RAG Pipeline - Core)
 │   │   │   ├── RAGPipeline.kt             (Main RAG logic)
 │   │   │   ├── RAGCache.kt                (Persistent caching)
 │   │   │   ├── VectorStore.kt             (Similarity search)
-│   │   │   ├── TFIDFEmbedder.kt           (Embeddings)
-│   │   │   └── DataChunker.kt             (Document processing)
-│   │   ├── quiz/
-│   │   │   ├── QuizEngine.kt              (Quiz logic)
-│   │   │   ├── QuestionBank.kt            (Question management)
-│   │   │   └── ScoreTracker.kt            (Progress tracking)
-│   │   ├── gamification/
-│   │   │   ├── StreakManager.kt           (Streak counting)
-│   │   │   ├── AchievementSystem.kt       (Badges & rewards)
-│   │   │   └── ProgressDashboard.kt       (Analytics)
-│   │   ├── auth/
-│   │   │   ├── AuthManager.kt             (Authentication logic)
-│   │   │   └── OfflineAuthHandler.kt      (Offline support)
-│   │   ├── data/
-│   │   │   ├── models/                    (Data classes)
-│   │   │   ├── repositories/              (Data access)
-│   │   │   └── database/                  (Room DB)
-│   │   ├── utils/
-│   │   │   ├── AnimationUtils.kt          (Animation helpers)
-│   │   │   ├── NetworkUtils.kt            (Connectivity)
-│   │   │   └── PreferenceManager.kt       (Settings)
-│   │   └── viewmodels/                    (MVVM ViewModels)
-│   ├── cpp/
+│   │   │   ├── TFIDFEmbedder.kt           (TF-IDF embeddings)
+│   │   │   ├── DataChunker.kt             (Document processing)
+│   │   │   ├── DocumentChunk.kt           (Chunk data class)
+│   │   │   └── TextUtils.kt               (Text utilities)
+│   │   ├── models/                        (Data Models)
+│   │   │   ├── AiChatAdapter.kt           (Chat UI adapter)
+│   │   │   ├── Chapter.kt                 (Chapter model)
+│   │   │   ├── ChatMessage.kt             (Message model)
+│   │   │   ├── Definition.kt              (Definition model)
+│   │   │   ├── QuizModels.kt              (Quiz data models)
+│   │   │   ├── QuizResult.kt              (Quiz results)
+│   │   │   ├── SubjectBook.kt             (Subject book structure)
+│   │   │   └── TimetableModels.kt         (Timetable data)
+│   │   ├── utils/                         (Utilities)
+│   │   │   ├── StreakTracker.kt           (Streak management)
+│   │   │   └── ToastUtils.kt              (UI utilities)
+│   │   ├── views/                         (Custom Views)
+│   │   │   └── MathView.kt                (Math rendering view)
+│   │   ├── Activities & Fragments:
+│   │   ├── SplashScreen.kt                (Launch screen)
+│   │   ├── Login.kt                       (Login activity)
+│   │   ├── Signup.kt                      (Signup activity)
+│   │   ├── MainActivity.kt                (Main container)
+│   │   ├── Home.kt                        (Home screen)
+│   │   ├── Profile.kt                     (User profile)
+│   │   ├── EditProfileActivity.kt         (Profile editing)
+│   │   ├── SettingsActivity.kt            (App settings)
+│   │   ├── DeveloperProfilesActivity.kt   (Team info)
+│   │   ├── Subject Activities:
+│   │   │   ├── Math.kt                    (Math subject)
+│   │   │   ├── Science.kt                 (Science subject)
+│   │   │   ├── English.kt                 (English subject)
+│   │   │   └── sst.kt                     (Social Science)
+│   │   ├── Subject Fragments:
+│   │   │   ├── MathFrag.kt                (Math content)
+│   │   │   ├── ScienceFrag.kt             (Science content)
+│   │   │   ├── EnglishFrag.kt             (English content)
+│   │   │   └── sstfrag.kt                 (SST content)
+│   │   ├── Quiz Components:
+│   │   │   ├── QuizQuestionsActivity.kt   (Quiz interface)
+│   │   │   ├── QuizViewerFrag.kt          (Quiz viewer)
+│   │   │   └── QuizChapterAdapter.kt      (Quiz navigation)
+│   │   ├── Learning Components:
+│   │   │   ├── AiChatterFrag.kt           (AI chat fragment)
+│   │   │   ├── ChapterViewer.kt           (Chapter reader)
+│   │   │   ├── ChapterAdapter.kt          (Chapter list)
+│   │   │   └── Courses.kt                 (Course overview)
+│   │   ├── Progress & Analytics:
+│   │   │   ├── Progress.kt                (Progress tracking)
+│   │   │   ├── StudentReport.kt           (Report viewer)
+│   │   │   └── ReportManager.kt           (Report management)
+│   │   ├── Schedule Components:
+│   │   │   ├── TimetableAdapter.kt        (Timetable display)
+│   │   │   └── TimetableLoader.kt         (Timetable loader)
+│   │   ├── Data Management:
+│   │   │   ├── User.kt                    (User model)
+│   │   │   ├── UserData.kt                (User data manager)
+│   │   │   └── JsonLoader.kt              (JSON data loader)
+│   ├── cpp/                               (Native C++ Layer)
 │   │   ├── llama_jni.cpp                  (JNI implementation)
 │   │   ├── llama.h                        (llama.cpp headers)
 │   │   ├── ggml.h                         (GGML tensor library)
+│   │   ├── ggml-alloc.h                   (Memory allocation)
+│   │   ├── ggml-backend.h                 (Backend operations)
+│   │   ├── ggml-cpu.h                     (CPU optimizations)
+│   │   ├── ggml-opt.h                     (Optimization utilities)
+│   │   ├── ggml-threading.h               (Threading support)
 │   │   └── CMakeLists.txt                 (Build configuration)
-│   ├── assets/
-│   │   ├── ai_data/                       (NCERT curriculum JSON)
-│   │   │   ├── beehive/                   (English literature)
-│   │   │   ├── maths/                     (Mathematics)
-│   │   │   ├── moments/                   (English supplementary)
-│   │   │   ├── Science/                   (Physics/Chemistry/Biology)
-│   │   │   └── Social Science/            (History/Geo/Pol Sci/Econ)
-│   │   ├── Data.json                      (Main data index)
-│   │   ├── *_chapters.json                (Chapter metadata)
-│   │   ├── *_quiz.json                    (Quiz questions)
-│   │   ├── timetable_9th.json             (Schedule data)
-│   │   └── models/                        (AI model - not in repo)
-│   ├── res/
-│   │   ├── anim/                          (Animation XML)
-│   │   ├── drawable/                      (Vector graphics)
+│   ├── assets/                            (App Assets)
+│   │   └── ai_data/                       (NCERT curriculum JSON)
+│   │       ├── beehive/                   (English literature)
+│   │       ├── maths/                     (Mathematics chapters)
+│   │       ├── moments/                   (English supplementary)
+│   │       ├── Science/                   (Physics/Chem/Bio)
+│   │       └── Social Science/            (History/Geo/Pol/Econ)
+│   ├── jniLibs/                           (Native Libraries)
+│   │   └── arm64-v8a/                     (ARM64 binaries)
+│   ├── res/                               (Resources)
+│   │   ├── anim/                          (Animation XML - 20+ files)
+│   │   ├── color/                         (Color state lists)
+│   │   ├── drawable/                      (Vector graphics & images)
+│   │   ├── font/                          (Custom fonts)
 │   │   ├── layout/                        (UI layouts)
+│   │   ├── menu/                          (Navigation menus)
+│   │   ├── mipmap-*/                      (App icons - various DPIs)
+│   │   ├── navigation/                    (Navigation graphs)
+│   │   ├── raw/                           (Raw resources)
 │   │   ├── values/                        (Strings, colors, styles)
-│   │   └── navigation/                    (Nav graph)
-│   └── AndroidManifest.xml
+│   │   ├── values-v23/                    (API 23+ resources)
+│   │   └── xml/                           (XML configs)
+│   └── AndroidManifest.xml                (App manifest)
 ├── build.gradle.kts                       (App build config)
+├── gradle/
+│   ├── libs.versions.toml                 (Dependency versions)
+│   └── wrapper/                           (Gradle wrapper)
 ├── settings.gradle.kts                    (Project settings)
 └── gradle.properties                      (Build properties)
 ```
@@ -956,16 +992,25 @@ Code/
 - `RAGCache`: Implements LRU caching with persistent storage
 - `VectorStore`: TF-IDF similarity search over NCERT chunks
 - `TFIDFEmbedder`: Generates vector representations for queries and documents
+- `DataChunker`: Processes and chunks educational content
+- `DocumentChunk`: Data class for chunk representation
+- `TextUtils`: Text processing utilities
 
 **3. Native Layer (`cpp/`)**
 - `llama_jni.cpp`: C++ implementation of model loading and inference
 - llama.cpp library: Efficient LLM inference on CPU
 - GGML: Low-level tensor operations optimized for mobile
+- Various ggml headers for threading, memory allocation, and optimization
 
-**4. Data Assets (`assets/`)**
+**4. Data Models (`models/` package)**
+- Quiz, Chapter, Chat, and Timetable data models
+- Adapters for UI components
+- Subject book structures
+
+**5. Educational Content (`assets/ai_data/`)**
 - Structured JSON files for each subject's curriculum
 - Pre-processed NCERT content in machine-readable format
-- Quiz question banks with answers and explanations
+- Organized by subject: Math, Science, English, Social Science
 
 ---
 
