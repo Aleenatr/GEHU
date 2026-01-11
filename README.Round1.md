@@ -1,4 +1,4 @@
-# LearnLoop: Offline AI Learning Assistant for Indian Schools
+# Demolition: Offline AI Learning Assistant for Indian Schools
 
 **Team:** Silent Loop
 
@@ -8,7 +8,7 @@
 
 **Empowering Government Education Through Offline AI Technology**
 
-LearnLoop is designed specifically for **government schools and rural education initiatives** where internet connectivity is limited and device resources are constrained. This project bridges the digital divide by bringing AI-powered personalized learning assistance to government students who need it most.
+Demolition is designed specifically for **government schools and rural education initiatives** where internet connectivity is limited and device resources are constrained. This project bridges the digital divide by bringing AI-powered personalized learning assistance to government students who need it most.
 
 **Key Government Alignment:**
 
@@ -51,9 +51,9 @@ An **offline AI-powered learning assistant** designed for Indian primary and sec
 
 ---
 
-## What Makes LearnLoop Different
+## What Makes Demolition Different
 
-Unlike conventional AI education platforms that depend on cloud infrastructure and high - end devices, LearnLoop executes complete AI reasoning - retrieval, inference, and generation - entirely on low-specification Android hardware without internet access.
+Unlike conventional AI education platforms that depend on cloud infrastructure and high - end devices, Demolition executes complete AI reasoning - retrieval, inference, and generation - entirely on low-specification Android hardware without internet access.
 
 **Technical Distinctions:**
 
@@ -391,7 +391,7 @@ These build upon the validated Round 1 foundation while maintaining offline-firs
 ```
 Code/
 ├── app/src/main/
-│   ├── java/com/example/learnloop/
+│   ├── java/com/example/Demolition/
 │   │   ├── ai/                    # AI Integration (Hidden)
 │   │   │   ├── GGUFModelLoader.kt (Model loading)
 │   │   │   ├── GGUFChat.kt        (Chat interface)
@@ -463,7 +463,7 @@ Code/
 
 <div align="center">
   <p>
-    <a href="releases/learnloop.apk">📥 Direct Download APK (Coming in Round 2)</a>
+    <a href="releases/Demolition.apk">📥 Direct Download APK (Coming in Round 2)</a>
   </p>
 </div>
 

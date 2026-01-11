@@ -1,4 +1,4 @@
-# LearnLoop: AI-Powered Offline Education Companion 🎓
+# Demolition: AI-Powered Offline Education Companion 🎓
 
 **Team Silent Loop** | GEHU Hackathon Round 2
 
@@ -6,7 +6,7 @@
 
 ## 🌟 Executive Summary
 
-LearnLoop is an offline AI learning assistant that runs on budget Android devices (2-3GB RAM). We've expanded from Round 1's basic RAG prototype to a more complete app with quizzes, user profiles, and visual learning tools—all still working without internet.
+Demolition is an offline AI learning assistant that runs on budget Android devices (2-3GB RAM). We've expanded from Round 1's basic RAG prototype to a more complete app with quizzes, user profiles, and visual learning tools—all still working without internet.
 
 **What We Built in Round 2:**
 - ✅ **Working Offline AI** validated on 2-3GB RAM devices (tight but functional)
@@ -15,7 +15,7 @@ LearnLoop is an offline AI learning assistant that runs on budget Android device
 - ✅ **Improved UI** with Material Design 3 (much better than Round 1's basic interface)
 - ✅ **Policy Alignment** designed for government school constraints
 
-### 📱 Download LearnLoop
+### 📱 Download Demolition
 
 <div align="center">
   
@@ -40,7 +40,7 @@ LearnLoop is an offline AI learning assistant that runs on budget Android device
   <img src="docs/images/R2_6.jpg" width="270" alt="Quiz Page"/>
   <img src="docs/images/R2_7.jpg" width="270" alt="Quiz Questions"/>
   
-  <p><em>LearnLoop's intuitive interface: AI Chat Assistant • Quiz Module • Smart Schedule</em></p>
+  <p><em>Demolition's intuitive interface: AI Chat Assistant • Quiz Module • Smart Schedule</em></p>
 </div>
 
 ---
@@ -49,7 +49,7 @@ LearnLoop is an offline AI learning assistant that runs on budget Android device
 
 ### Government Education Transformation
 
-LearnLoop directly addresses critical gaps in India's public education infrastructure:
+Demolition directly addresses critical gaps in India's public education infrastructure:
 
 **Policy Alignment:**
 - 🏛️ **NEP 2020**: Implements AI-enabled personalized learning recommendations
@@ -102,7 +102,7 @@ Indian students in government schools face systemic barriers to quality educatio
 
 ## 🚀 Our Solution
 
-LearnLoop runs an AI learning assistant entirely on-device. It's not perfect, but it works without internet on budget phones—something most EdTech apps can't claim.
+Demolition runs an AI learning assistant entirely on-device. It's not perfect, but it works without internet on budget phones—something most EdTech apps can't claim.
 
 ### Core Innovation (and Constraints)
 
@@ -1128,7 +1128,7 @@ The C++ layer is built using CMake and Android NDK:
 
 ---
 
-## 🏅 What Makes LearnLoop Exceptional
+## 🏅 What Makes Demolition Exceptional
 
 ### Innovation Highlights
 
@@ -1168,7 +1168,7 @@ We are a multidisciplinary team passionate about leveraging technology for educa
 | **Harshit Tandon** | Full-Stack Developer             | Feature implementation, native integration, quiz system            | [LinkedIn](https://www.linkedin.com/in/hartan9124)              |
 | **Geetika Saini**  | Data Engineer & AI Integration   | NCERT data processing, curriculum structuring, AI model integration| [LinkedIn](https://www.linkedin.com/in/geetika-saini-a4466728a) |
 
-**Team Philosophy:** We believe technology should serve those who need it most. LearnLoop embodies our commitment to educational equity and social impact through pragmatic engineering.
+**Team Philosophy:** We believe technology should serve those who need it most. Demolition embodies our commitment to educational equity and social impact through pragmatic engineering.
 
 ---
 
@@ -1197,7 +1197,7 @@ We are a multidisciplinary team passionate about leveraging technology for educa
 
 <div align="center">
 
-### 📱 Get LearnLoop Now
+### 📱 Get Demolition Now
 
 [![Download APK](https://img.shields.io/badge/📥_Download_APK-brightgreen?style=for-the-badge&logo=android&logoColor=white)](https://drive.google.com/file/d/1hUuOpTtXQRJCUEViQpWICezuiUig6SOJ/view?usp=sharing)
 
@@ -1222,7 +1222,7 @@ We are a multidisciplinary team passionate about leveraging technology for educa
    - Follow on-screen prompts
 
 4. **Launch & Setup**
-   - Open LearnLoop app
+   - Open Demolition app
    - Complete quick onboarding (select grade level)
    - First launch takes 5-10 seconds to build AI index
    - Start learning offline!
@@ -1320,7 +1320,7 @@ This project is developed for the GEHU Hackathon.
 
 **Made with ❤️ in India for Indian Students**
 
-*LearnLoop - Making offline AI tutoring actually work on budget phones*
+*Demolition - Making offline AI tutoring actually work on budget phones*
 
 ---
 
