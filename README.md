@@ -47,8 +47,6 @@ Demolition is an offline AI learning assistant that runs on budget Android devic
 
 ---
 
-## 🎯 Project Theme: App + GOV
-
 ### Government Education Transformation
 
 Demolition directly addresses critical gaps in India's public education infrastructure:
