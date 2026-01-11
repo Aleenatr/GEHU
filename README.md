@@ -1166,7 +1166,7 @@ We are a multidisciplinary team passionate about leveraging technology for educa
 | **Mayank**         | App Developer & Web Developer    | Android app development, project architecture, documentation       | [LinkedIn](https://www.linkedin.com/in/vortex-m)                |
 | **Aleena**         | AI Engineer & Ideation Lead      | AI model optimization, RAG pipeline design, core concept           | [LinkedIn](https://www.linkedin.com/in/aleena-t-r-0ba237285)    |
 | **Harshit Tandon** | Full-Stack Developer             | Feature implementation, native integration, quiz system            | [LinkedIn](https://www.linkedin.com/in/hartan9124)              |
-| **Geetika Saini**  | Data Engineer & AI Integration   | NCERT data processing, curriculum structuring, AI model integration| [LinkedIn](https://www.linkedin.com/in/geetika-saini-a4466728a) |
+| **Geetika Saini**  | Data Engineer & AI Integration   | NCERT data processing, curriculum structuring                      | [LinkedIn](https://www.linkedin.com/in/geetika-saini-a4466728a) |
 
 **Team Philosophy:** We believe technology should serve those who need it most. Demolition embodies our commitment to educational equity and social impact through pragmatic engineering.
 
